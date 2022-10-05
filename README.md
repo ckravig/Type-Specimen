@@ -15,3 +15,6 @@ https://fonts.adobe.com/fonts/acumin
 
 The Neue Black:
 https://www.theleagueofmoveabletype.com/the-neue-black
+
+Ubuntu:
+https://fonts.google.com/specimen/Ubuntu?query=ubuntu#styles
