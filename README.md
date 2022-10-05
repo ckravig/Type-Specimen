@@ -2,7 +2,7 @@
 Art 377 Project
 
 
-:Font Ideas:
+-Font Ideas-
 
 Maxular:
 https://fonts.adobe.com/fonts/maxular
