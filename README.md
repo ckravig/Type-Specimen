@@ -21,3 +21,6 @@ https://fonts.google.com/specimen/Ubuntu?query=ubuntu#styles
 
 Insp:
 https://nichrome.mass-driver.com/
+
+IBM Plex Mono:
+https://fonts.adobe.com/fonts/ibm-plex-mono
