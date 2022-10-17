@@ -23,4 +23,4 @@ Insp:
 https://nichrome.mass-driver.com/
 
 IBM Plex Mono:
-https://fonts.adobe.com/fonts/ibm-plex-mono
+https://fonts.google.com/specimen/IBM+Plex+Mono?query=Plex+Mono
