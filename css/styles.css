@@ -1,0 +1,21 @@
+html {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "IBM Plex Mono";
+    }
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar {
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+}
