@@ -1,5 +1,14 @@
+/* --------------- */
+/* Color Variables */
+/* --------------- */
+:root {
+    --myGreen: #39FF14;
+  }
+
+
 html {
     box-sizing:border-box;
+    background-color: black;
 }
 
 body {
@@ -14,8 +23,23 @@ img {
     max-width: 100%;
 }
 
+.logoText {
+    color: var(--myGreen);
+    text-align: ;
+}
+
 .navbar {
     font-style: italic;
     font-size: large;
     text-align: center;
+    color: var(--myGreen);
+}
+
+.Intro {
+    display: inline-block;
+
+}
+
+.Characters {
+    display: inline-block;
 }
