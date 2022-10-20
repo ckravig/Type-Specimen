@@ -12,27 +12,40 @@ html {
 }
 
 body {
-    font-family: "IBM Plex Mono";
+    font-family: 'IBM Plex Mono', monospace;
     }
 
-*, *:before, *:after {
+/* *, *:before, *:after {
     box-sizing:inherit;
-}
+} */
 
 img {
     max-width: 100%;
 }
 
+.logo {
+    /* color: var(--myGreen); */
+}
+
 .logoText {
     color: var(--myGreen);
-    text-align: ;
+    
 }
 
 .navbar {
-    font-style: italic;
     font-size: large;
     text-align: center;
     color: var(--myGreen);
+    display: inline-block;
+}
+
+li {
+    width: auto;
+    display: inline-block;
+    color: var(--myGreen);
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
 }
 
 .Intro {
@@ -43,3 +56,4 @@ img {
 .Characters {
     display: inline-block;
 }
+
