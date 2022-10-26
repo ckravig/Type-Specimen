@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/drop.css">
     
 
 </head>
@@ -88,21 +89,35 @@
             </p>
         </div>
 
-        <div class="charactersText">
+        <div id="ct" class="charactersText">
             <p>
                 Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
             </p>
         </div>
 
-        
+        <div id = "cdd" class="cwdropdown">
+            <button id = "cwBtn" class="cwdropbtn">Weight</button>
+            <div id = "cwddCont" class="cwdropdown-content">
+              <a onmousedown="changeWeight(100)">100</a>
+              <a onmousedown="changeWeight(200)">200</a>
+              <a onmousedown="changeWeight(300)">300</a>
+              <a onmousedown="changeWeight(400)">400</a>
+              <a onmousedown="changeWeight(500)">500</a>
+              <a onmousedown="changeWeight(600)">600</a>
+            </div>
+        </div>
 
-        <select id ="cdd" name="charactersDropDown" onchange="alertTest(value);">
-            <option value='100'>100</option>
-            <option value='200'>200</option>
-            <option value='300'>300</option>
-        </select>
-
-        
+        <div id = "cdd" class="cwdropdown">
+            <button id = "cwBtn" class="cwdropbtn">Weight</button>
+            <div id = "cwddCont" class="cwdropdown-content">
+              <a onmousedown="changeWeight(100)">100</a>
+              <a onmousedown="changeWeight(200)">200</a>
+              <a onmousedown="changeWeight(300)">300</a>
+              <a onmousedown="changeWeight(400)">400</a>
+              <a onmousedown="changeWeight(500)">500</a>
+              <a onmousedown="changeWeight(600)">600</a>
+            </div>
+        </div>
 
     </div>
 

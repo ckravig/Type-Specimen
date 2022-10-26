@@ -1,10 +1,14 @@
 
 
 function changeWeight(value){
-    var element = document.getElementsByClassName("charactersText");
-    element.style.fontWeight = value;
+    var characters = document.getElementById("ct");
+    characters.style.fontWeight = value;
 
-    alert(value);
+    var btn = document.getElementById("cwBtn");
+    btn.textContent = "Weight: " + value;
+
+    var ddCont = document.getElementById("cwddCont");
+    ddCont.style.minWidth = "117px";
 }
 
 function alertTest(value) {
