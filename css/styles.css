@@ -142,7 +142,7 @@ li {
 }
 
 .Intro {
-    padding: 30px 15%;
+    padding: 30px 22%;
     padding-top: 60px;
     padding-bottom: 80px;
     color: white;
@@ -159,12 +159,15 @@ li {
 }
 
 .aboutText{
-    font-size: 12pt;
+    font-size: 14pt;
     line-height: 140%;
 }
 
+.aboutText p{
+    margin-bottom: 20px;
+}
+
 .Characters {
-    display: inline-block;
     padding: 30px 15%;
     padding-top: 60px;
     padding-bottom: 80px;
@@ -182,5 +185,34 @@ li {
     color: white;
     text-align: center;
     font-weight: 100;
+    border-color: white;
+    font-size: 24pt;
+    font-style: normal;
 }
 
+.CharactersDropdown{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cNumbers {
+    line-height: 300%;
+}
+
+.bsHeader {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 36pt;
+}
+
+.BodySample {
+    padding: 30px 22%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color: white;
+    text-align: justify;
+    background-color: var(--myDarkGray);
+    
+}
