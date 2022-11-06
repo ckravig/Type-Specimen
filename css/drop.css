@@ -1,5 +1,24 @@
+/* --------------- */
+/* Color Variables */
+/* --------------- */
+:root {
+  --myGreen: #39FF14;
+  --myDarkGreen: #25281c;
+  --myDarkGray: #1f1f1f;
+  --myLightGray: #8D909B;
+  --myBlue: #14FFF7;
+  --myRed: #E63946;
+  --myYellow: #F2AF00;
+  --myBTNDarkGray: #333333;
+  --myBTNDarkGrayHover: #1d1d1d;
+}
+
+/* ---------------- */
+/* Start button CSS */
+/* ---------------- */
+
 .cwdropbtn {
-  background-color: #4CAF50;
+  background-color: var(--myBTNDarkGray);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -37,7 +56,7 @@
 
 /* Change color of cwdropdown links on hover */
 .cwdropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: #b6b6b6
 }
 
 /* Show the cwdropdown menu on hover */
@@ -47,11 +66,11 @@
 
 /* Change the background color of the cwdropdown button when the cwdropdown content is shown */
 .cwdropdown:hover .cwdropbtn {
-  background-color: #3e8e41;
+  background-color: var(--myBTNDarkGrayHover);
 }
 
 .csdropbtn {
-    background-color: #4CAF50;
+    background-color: var(--myBTNDarkGray);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -71,7 +90,7 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 82px;
+    min-width: 63px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 12px;
@@ -89,7 +108,7 @@
   
   /* Change color of csdropdown links on hover */
   .csdropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #b6b6b6
 }
   
   /* Show the csdropdown menu on hover */
@@ -99,12 +118,12 @@
   
   /* Change the background color of the csdropdown button when the csdropdown content is shown */
   .csdropdown:hover .csdropbtn {
-    background-color: #3e8e41;
+    background-color: var(--myBTNDarkGrayHover);
   }
 
 /* Italic Toggle Button */
 .stydropbtn {
-  background-color: #4CAF50;
+  background-color: var(--myBTNDarkGray);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -115,5 +134,5 @@
 
 /* Change the color of the Italic Toggle Button when hovered */
 .stydropbtn:hover {
-  background-color: #3e8e41;
+  background-color: var(--myBTNDarkGrayHover);
 }

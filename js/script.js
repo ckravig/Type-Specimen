@@ -17,10 +17,11 @@ function changeSize(value){
     characters.style.fontSize = value;
 
     var btn = document.getElementById("csBtn");
-    btn.textContent = "Size: " + value + "pt";
+    btn.textContent = "Size: " + value;
 
     var ddCont = document.getElementById("csddCont");
     ddCont.style.minWidth = "105px";
+
 }
 
 // Toggle character section font style | Italic || Normal |

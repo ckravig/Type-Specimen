@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/drop.css">
+    <link rel="stylesheet" href="css/topBtn.css">
 
     <link rel="icon" type="image/x-icon" href="/assets/imgaes/favicon.ico">
     
@@ -19,6 +20,17 @@
 </head>
 
 <body>
+
+    <script type = "text/javascript" src="js/topBtn.js"></script>
+
+    <div id="topBtn" class="topBtn">
+        <div class="circle">
+            <!-- <img id="up" src="/assets/imgaes/Boomi.svg" alt="Back to Top"> -->
+            <a href="#top" hover: style="rotate: 0;">
+                <img id="reload" src="/assets/imgaes/Boomi.svg" alt="Back to Top">
+            </a>
+        </div>
+    </div>
 
     <div class="Header">
 
@@ -100,14 +112,19 @@
         </div>
 
         <div id="ct" class="charactersText">
-            <p>
-                Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm
-            </p>
-            
-            <p>
-                Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-            </p>
-            
+
+            <div class="ctTop">
+                <p>
+                    Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm
+                </p>
+            </div>
+
+            <div class="ctBot">
+                <p>
+                    Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+                </p>
+            </div>
+
             <div class="cNumbers">
                 <p>
                     0 1 2 3 4 5 6 7 8 9
@@ -140,13 +157,13 @@
             <div id = "csdd" class="csdropdown">
                 <button id = "csBtn" class="csdropbtn">Size</button>
                 <div id = "csddCont" class="csdropdown-content">
-                <a onmousedown="changeSize(10)">10</a>
-                <a onmousedown="changeSize(12)">12</a>
-                <a onmousedown="changeSize(24)">24</a>
-                <a onmousedown="changeSize(32)">32</a>
-                <a onmousedown="changeSize(40)">40</a>
-                <a onmousedown="changeSize(50)">50</a>
-                <a onmousedown="changeSize(60)">60</a>
+                <a onmousedown="changeSize('10pt')">10</a>
+                <a onmousedown="changeSize('12pt')">12</a>
+                <a onmousedown="changeSize('24pt')">24</a>
+                <a onmousedown="changeSize('32pt')">32</a>
+                <a onmousedown="changeSize('40pt')">40</a>
+                <a onmousedown="changeSize('50pt')">50</a>
+                <a onmousedown="changeSize('60pt')">60</a>
                 </div>
             </div>
             
@@ -155,6 +172,35 @@
 
             </div>
 
+    </div>
+
+    <div class="WordBank">
+
+        <div class="wbHeader">
+            <p>
+                Display Capabilities
+            </p>
+        </div>
+            
+        <div class="wb1">
+            <p>PELARGONIUMS</p>
+        </div>
+
+        <div class="wb2">
+
+        </div>
+
+        <div class="wb3">
+
+        </div>
+
+        <div class="wb4">
+            
+        </div>
+
+        <div class="wb5">
+            
+        </div>
     </div>
 
     <div class="BodySample">
@@ -166,26 +212,90 @@
         </div>
 
         <div class="firstBody">
-            <P>
-                Research has been a part of IBM since its founding, and its organized efforts trace their roots back to 1945, when the Watson Scientific Computing Laboratory was founded at Columbia University in New York City, converting a renovated fraternity house on Manhattan's West Side into IBM's first laboratory. Now, IBM Research constitutes the largest industrial research organization in the world, with 12 labs on 6 continents.[143] IBM Research is headquartered at the Thomas J. Watson Research Center in New York, and facilities include the Almaden lab in California, Austin lab in Texas, Australia lab in Melbourne, Brazil lab in São Paulo and Rio de Janeiro, China lab in Beijing and Shanghai, Ireland lab in Dublin, Haifa lab in Israel, India lab in Delhi and Bangalore, Tokyo lab, Zurichlab and Africa lab in Nairobi.
-            </P>
+            <p>
+                Research has been a part of IBM since its founding, and its 
+                organized efforts trace their roots back to 1945, when the Watson 
+                Scientific Computing Laboratory was founded at Columbia University 
+                in New York City, converting a renovated fraternity house on 
+                Manhattan's West Side into IBM's first laboratory. Now, IBM 
+                Research constitutes the largest industrial research organization 
+                in the world, with 12 labs on 6 continents. IBM Research is 
+                headquartered at the Thomas J. Watson Research Center in New York, 
+                and facilities include the Almaden lab in California, Austin lab in 
+                Texas, Australia lab in Melbourne, Brazil lab in São Paulo and Rio 
+                de Janeiro, China lab in Beijing and Shanghai, Ireland lab in 
+                Dublin, Haifa lab in Israel, India lab in Delhi and Bangalore, 
+                Tokyo lab, Zurichlab and Africa lab in Nairobi.
+            </p>
         </div>
 
-        <div class="secondBody">
-            <P>
-                IBM is nicknamed Big Blue in part due to its blue logo and color scheme,[158][159] and also partially since IBM once had a de facto dress code of white shirts with blue suits.[158][160] The company logo has undergone several changes over the years, with its current "8-bar" logo designed in 1972 by graphic designer Paul Rand.[161] It was a general replacement for a 13-bar logo, since period photocopiers did not render narrow (as opposed to tall) stripes well. Aside from the logo, IBM used Helvetica as a corporate typeface for 50 years, until it was replaced in 2017 by the custom-designed IBM Plex.
+        <div class="splitBodies">
+            <div class="secondBody">
+                <p>
+                    <strong>IBM</strong> is nicknamed Big Blue in part due to its blue logo and 
+                    color scheme, and also partially since IBM once had a de facto 
+                    dress code of white shirts with blue suits. The company logo 
+                    has undergone several changes over the years, with its current 
+                    "8-bar" logo designed in 1972 by graphic designer Paul Rand. 
+                    It was a general replacement for a 13-bar logo, since period 
+                    photocopiers did not render narrow (as opposed to tall) stripes 
+                    well. Aside from the logo, IBM used Helvetica as a corporate 
+                    typeface for 50 years, until it was replaced in 2017 by the 
+                    custom-designed 
+                    <mark class="red"><i>IBM</i></mark>
+                    <mark class="yellow"><i>Plex</i></mark>.
+                </p>
+            </div>
 
-                IBM has a valuable brand as a result of over 100 years of operations and marketing campaigns. Since 1996, IBM has been the exclusive technology partner for the Masters Tournament, one of the four major championships in professional golf, with IBM creating the first Masters.org (1996), the first course cam (1998), the first iPhone app with live streaming (2009), and first-ever live 4K Ultra High Definition feed in the United States for a major sporting event (2016).[162] As a result, IBM CEO Ginni Rometty became the third female member of the Master's governing body, the Augusta National Golf Club.[163] IBM is also a major sponsor in professional tennis, with engagements at the U.S. Open, Wimbledon, the Australian Open, and the French Open.[164] The company also sponsored the Olympic Games from 1960 to 2000,[165] and the National Football League from 2003 to 2012.[166]
-            </P>
+            <div class="thirdBody">
+                <p>
+                    <u><i>IBM</i></u> has a valuable brand as a result of over 100 years of 
+                    operations and marketing campaigns. Since 1996, IBM has been 
+                    the exclusive technology partner for the Masters Tournament, 
+                    one of the four major championships in professional golf, with 
+                    IBM creating the first Masters.org (1996), the first course 
+                    cam (1998), the first iPhone app with live streaming (2009), 
+                    and first-ever live 4K Ultra High Definition feed in the 
+                    United States for a major sporting event (2016). As a result, 
+                    IBM CEO Ginni Rometty became the third female member of the 
+                    Master's governing body, the Augusta National Golf Club.
+                    <!-- IBM is also a major sponsor in professional tennis, with 
+                    engagements at the U.S. Open, Wimbledon, the Australian Open, 
+                    and the French Open.The company also sponsored the 
+                    Olympic Games from 1960 to 2000, and the National Football 
+                    League from 2003 to 2012. -->
+                </p>
+            </div>
         </div>
 
-        <div class="thirdBody">
-            <P>
-                
-            </P>
+        <div class="fourthBody">
+            <p>
+                The IBM Rome Software Lab (formerly known as IBM Tivoli Rome Laboratory) is 
+                one of the largest software development laboratories in Italy, and one of the 
+                largest IBM Software Group Labs in Europe.
+                Founded in 1978, the Rome Lab (located in Rome) now has more than 550 
+                professionals among software developers, project managers, IT specialists, 
+                and IT architects. The main mission of the Rome Lab is focused on IBM Tivoli 
+                development, including Tivoli Configuration Manager, Tivoli Remote Control, 
+                ivoli Workload Scheduler, and Tivoli Monitoring.
+                In 2004, the laboratory focused on the adoption of the IBM Rational Unified 
+                Process (RUP) in Tivoli and in the wider Software Group inside IBM. In 2007, 
+                IBM opened the "Rome SOA Leadership Center" hosted by and formed with a team of 
+                experts on service-oriented architecture (SOA) coming from the IBM Rome Software 
+                Laboratory. The Rome laboratory constantly collaborates with Italian 
+                Universities and Research Centers.
+                In 2011, IBM became the first technology company Warren Buffett's 
+                holding company Berkshire Hathaway invested in. Initially he bought 
+                64 million shares costing 10.5 billion dollars. Over the years he 
+                increased his IBM holdings however he reduced it by 94.5% to 2.05 
+                million shares at the end of 2017. By May 2018 he was completely 
+                out of IBM.
+            </p>
         </div>
 
     </div>
+
+    
 
 </body>
 </html>

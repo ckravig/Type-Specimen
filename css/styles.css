@@ -11,8 +11,8 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+small, strike, sub, sup, tt, var,
+b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -106,6 +106,7 @@ img {
 .logo {
     position: absolute;
     top: 50px;
+    padding-left: 30px 22%;
 }
 
 .logoText {
@@ -142,7 +143,7 @@ li {
 }
 
 .Intro {
-    padding: 30px 22%;
+    padding: 30px 32%;
     padding-top: 60px;
     padding-bottom: 80px;
     color: white;
@@ -161,6 +162,9 @@ li {
 .aboutText{
     font-size: 14pt;
     line-height: 140%;
+    border: 300px;
+    border-top: 0;
+    border-bottom: 0;
 }
 
 .aboutText p{
@@ -168,13 +172,13 @@ li {
 }
 
 .Characters {
-    padding: 30px 15%;
+    padding: 30px 10%;
     padding-top: 60px;
     padding-bottom: 80px;
 }
 
 .charactersHeader {
-    color: white;
+    color: var(--myRed);
     font-weight: 500;
     text-align: center;
     padding-bottom: 50px;
@@ -185,9 +189,16 @@ li {
     color: white;
     text-align: center;
     font-weight: 100;
-    border-color: white;
+    /* border-color: white; */
     font-size: 24pt;
     font-style: normal;
+}
+
+.ctTop {
+    
+}
+.ctBot {
+    margin-top: 40px;
 }
 
 .CharactersDropdown{
@@ -196,11 +207,24 @@ li {
 }
 
 .cNumbers {
-    line-height: 300%;
+    margin: 60px;
 }
 
-.bsHeader {
-    color: white;
+.cSpecial {
+    margin-bottom: 60px;
+}
+
+
+.WordBank {
+    padding: 30px 10%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color: var(--myDarkGray);
+    text-align: center;
+}
+
+.wbHeader {
+    color: var(--myYellow);
     font-weight: 500;
     text-align: center;
     padding-bottom: 50px;
@@ -213,6 +237,49 @@ li {
     padding-bottom: 80px;
     color: white;
     text-align: justify;
-    background-color: var(--myDarkGray);
-    
+}
+
+.bsHeader {
+    color: var(--myBlue);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 36pt;
+}
+
+.firstBody {
+    margin-bottom: 70px;
+    line-height: 120%;
+    letter-spacing: 2px;
+    grid-area: "a";
+}
+
+.splitBodies {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas: "a b c";
+    margin-bottom: 70px;
+}
+
+.secondBody {
+    line-height: 155%;
+    font-size: large;
+    grid-area: "c";
+    letter-spacing: -1px;
+    word-spacing: -5px;
+    font-weight: 500;
+}
+
+.thirdBody {
+    font-size: 14pt;
+    word-spacing: -5px;
+    line-height: 125%;
+}
+
+.fourthBody {
+    font-weight: 400;
+    font-size: 16pt;
+    word-spacing: -5px;
+    line-height: 125%;
+    text-align: left;
 }
