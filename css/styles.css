@@ -422,7 +422,43 @@ li {
 
 .wb1 {
     font-size: 100pt;
+    font-weight: 100;
     color: white;
+}
+
+.PELARGONIUMS {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.PELARGONIUMS :hover{
+    position: relative;
+    display: inline-block;
+    /* color: var(--myBlue); */
+    font-size: 100pt;
+    animation: peljump 0.7s forwards;
+    /* animation-delay: calc(0.1s * var(--i)); */
+}
+
+.PELARGONIUMS span {
+    transform: rotate(45deg);
+}
+ 
+@keyframes peljump {
+      0%{
+        transform: rotate(45deg);
+      }
+      25%{
+        transform: rotate(25deg);
+      }
+        
+      50%{
+        transform: rotate(15deg);
+      }
+      100%{
+        transform: rotate(0deg);
+      }
 }
 
 .wb2 {
@@ -467,6 +503,10 @@ li {
 .wb3 {
     font-size: 100pt;
     color: white;
+}
+
+.wb3 :hover {
+    text-shadow: 2px 2px 5px pink;
 }
 
 .wb4 {
