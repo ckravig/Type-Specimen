@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/drop.css">
     <link rel="stylesheet" href="css/topBtn.css">
+    <link rel="stylesheet" href="css/typetest.css">
 
     <link rel="icon" type="image/x-icon" href="/assets/imgaes/favicon.ico">
     
@@ -190,6 +191,8 @@
 
     </div>
 
+    <script type = "text/javascript" src="js/boomi.js"></script>
+
     <div class="DialogueBox">
 
         <div class="dbHeader">
@@ -200,9 +203,9 @@
 
         <img class="boomi" src="/assets/imgaes/BoomiDB.svg" alt="Boomi the boomerang">
 
-        <div class="dbText">
-            <p id="dbText1">
-                Hello, My name is <strong><i>Boomi</i></strong> the boomerang! <span id="dbElipses">...</span>
+        <div class="dbText" onmousedown="talk()">
+            <p id="dbText1" class="dbText1">
+                Hello, my name is <strong><i>Boomi</i></strong> the boomerang! <span id="dbElipses">...</span>
             </p>
         </div>
 
@@ -362,7 +365,45 @@
 
     </div>
 
-    
+    <div class="TypeTester">
+
+        <h1>
+            Type Tester
+        </h1>
+
+        <div id = "twdd" class="twdropdown">
+            <button id = "twBtn" class="twdropbtn">Weight</button>
+            <div id = "twddCont" class="twdropdown-content">
+            <a onmousedown="ttchangeWeight(100)">100</a>
+            <a onmousedown="ttchangeWeight(200)">200</a>
+            <a onmousedown="ttchangeWeight(300)">300</a>
+            <a onmousedown="ttchangeWeight(400)">400</a>
+            <a onmousedown="ttchangeWeight(500)">500</a>
+            <a onmousedown="ttchangeWeight(600)">600</a>
+            <a onmousedown="ttchangeWeight(700)">700</a>
+            </div>
+        </div>
+
+        <div id = "tsdd" class="tsdropdown">
+            <button id = "tsBtn" class="tsdropbtn">Size</button>
+            <div id = "tsddCont" class="tsdropdown-content">
+            <a onmousedown="ttchangeSize('10pt')">10</a>
+            <a onmousedown="ttchangeSize('12pt')">12</a>
+            <a onmousedown="ttchangeSize('24pt')">24</a>
+            <a onmousedown="ttchangeSize('32pt')">32</a>
+            <a onmousedown="ttchangeSize('40pt')">40</a>
+            <a onmousedown="ttchangeSize('50pt')">50</a>
+            <a onmousedown="ttchangeSize('60pt')">60</a>
+            </div>
+        </div>
+
+        <button id = "ttstyBtn" class="ttstydropbtn"  onmousedown="tttoggleItalic()">Toggle Italic </button>
+
+        <div class="try" id="try" contenteditable="true">
+            Try out IBM Plex Mono for yourself, type here!
+        </div>
+
+    </div>
 
 </body>
 </html>
