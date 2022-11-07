@@ -32,12 +32,14 @@
         </div>
     </div>
 
+    <script type = "text/javascript" src="js/nav.js"></script>
+
     <div class="Header">
 
         <div class="logo">
 
             <div class="box">
-                <div style="width:132px;height:132px;border:2px solid rgb(255, 255, 255); display: inline-block;"></div>
+                
             </div>
 
             <div class="logoText">
@@ -59,9 +61,23 @@
         <div class="navbar">
 
             <ul>
-                <li>Intro</li>
-                <li>Characters</li>
-                <li>Paragraphs</li>
+
+                <li>
+                    <a href="#Intro">Intro</a>
+                </li>
+
+                <li>
+                    <a href="#Characters">Characters</a>
+                </li>
+
+                <li>
+                    <a href="#WordBank">Capabilities</a>
+                </li>
+
+                <li>
+                    <a href="#BodySample">Body</a>
+                </li>
+
             </ul>
 
         </div>
@@ -69,7 +85,7 @@
     </div>
 
 
-    <div class="Intro">
+    <div id="Intro" class="Intro">
 
         <div class="hero">
             <p>
@@ -103,7 +119,7 @@
 
     <script type = "text/javascript" src="js/script.js"></script>
 
-    <div class="Characters">
+    <div id="Characters" class="Characters">
 
         <div class="charactersHeader">
             <p>
@@ -174,7 +190,27 @@
 
     </div>
 
-    <div class="WordBank">
+    <div class="DialogueBox">
+
+        <div class="dbHeader">
+            <h1>
+                Boomi
+            </h1>
+        </div>
+
+        <img class="boomi" src="/assets/imgaes/BoomiDB.svg" alt="Boomi the boomerang">
+
+        <div class="dbText">
+            <p id="dbText1">
+                Hello, My name is <strong><i>Boomi</i></strong> the boomerang! <span id="dbElipses">...</span>
+            </p>
+        </div>
+
+    </div>
+
+    <script type = "text/javascript" src="js/wb.js"></script>
+
+    <div id="WordBank" class="WordBank">
 
         <div class="wbHeader">
             <p>
@@ -188,22 +224,53 @@
 
         <div class="wb2">
 
+            <div id="wb2metal" class="wb2metal">
+                <strong>metal</strong>
+            </div>
+
+            <div id="wb2work" class="wb2work" onmouseover="wb2('red')" onmouseout="wb2('silver')">
+                <p>working</p>
+            </div>
+
         </div>
 
         <div class="wb3">
-
+            <p>
+                DOUBLETHINKS
+            </p>
         </div>
 
         <div class="wb4">
-            
+            <div class="subnormality">
+                <span style="--i:1">s</span>
+                <span style="--i:2">u</span>
+                <span style="--i:3">b</span>
+                <span style="--i:4">n</span>
+                <span style="--i:5">o</span>
+                <span style="--i:6">r</span>
+                <span style="--i:7">m</span>
+                <span style="--i:8">a</span>
+                <span style="--i:9">l</span>
+                <span style="--i:10">i</span>
+                <span style="--i:11">t</span>
+                <span style="--i:12">y</span>
+            </div>
         </div>
 
         <div class="wb5">
-            
+
+            <div id="wb5thund" class="wb5thund" onmouseover="wb5('white', 'italic')" onmouseout="wb5('blue', 'normal')">
+                <p>THUNDER</p>
+            </div>
+
+            <div id="wb5clap" class="wb5clap">
+                <p>CLAPS</p>
+            </div>
+
         </div>
     </div>
 
-    <div class="BodySample">
+    <div id="BodySample" class="BodySample">
 
         <div class="bsHeader">
             <p>

@@ -100,13 +100,20 @@ img {
 .Header {
     margin:150px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 85px;
 }
 
 .logo {
     position: absolute;
     top: 50px;
     padding-left: 30px 22%;
+}
+
+.box {
+    width:132px;
+    height:132px;
+    border:2px solid white;
+    display: inline-block;
 }
 
 .logoText {
@@ -118,8 +125,29 @@ img {
     top: 5px;
     left: 27px;
     letter-spacing: 12px;
-    
-    
+}
+
+.box.fixed-top {
+    position: fixed;
+    width:66px;
+    height:66px;
+    border:1px solid white;
+    z-index: 20;
+    top: 5px;
+    margin-left: 30px;
+}
+
+.logoText.fixed-top {
+    position: fixed;
+    margin: 0px;
+    margin-left: 30px;
+    font-size: 22pt;
+    font-weight: 200;
+    color: var(--myGreen);
+    top: 10px;
+    left: 161px;
+    letter-spacing: 12px;
+    z-index: 10;
 }
 
 .navbar {
@@ -128,9 +156,40 @@ img {
     color: var(--myGreen);
     display: inline-block;
     margin-top: 80px;
-    margin-left: 25vw;
-    margin-bottom: 100px;
-    position: sticky
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+}
+
+.navbar a:hover {
+    filter: brightness(65%);
+ }
+
+.navbar a:visited {
+    color: var(--myGreen);
+ }
+
+
+.navbar.fixed-top {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    padding: 32px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    z-index: 9;
+    border:1px solid #333333;
+}
+
+.navbar.fixed-top a {
+    color: var(--myGreen);
 }
 
 li {
@@ -144,7 +203,7 @@ li {
 
 .Intro {
     padding: 30px 32%;
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 80px;
     color: white;
     text-align: justify;
@@ -173,7 +232,7 @@ li {
 
 .Characters {
     padding: 30px 10%;
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 80px;
 }
 
@@ -189,7 +248,6 @@ li {
     color: white;
     text-align: center;
     font-weight: 100;
-    /* border-color: white; */
     font-size: 24pt;
     font-style: normal;
 }
@@ -214,13 +272,75 @@ li {
     margin-bottom: 60px;
 }
 
-
-.WordBank {
-    padding: 30px 10%;
-    padding-top: 60px;
-    padding-bottom: 80px;
+.DialogueBox {
     background-color: var(--myDarkGray);
+    font-size: 24pt;
+    color: white;
+    padding: 30px 10%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dbHeader {
+    color: white;
+    font-style: italic;
+    font-weight: 500;
     text-align: center;
+    padding-bottom: 50px;
+    font-size: 36pt;
+}
+
+.boomi {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    border-width:3px;
+    border-style:solid;
+    border-color:#ffffff;
+    border-radius: 15px;
+    padding-left: 280px;
+    padding-right: 280px;
+}
+
+.dbText {
+    border-width:3px;
+    border-style:solid;
+    border-color:#ffffff;
+    border-radius: 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 20%;
+    margin-top: 85px;
+    margin-bottom: 0;
+}
+
+.DialogueBox p {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    line-height: normal;
+    animation:
+        typing 3.5s steps(40, end);
+    }
+
+#dbElipses {
+    animation:
+        blink-elipses .75s step-end infinite;
+}
+      
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-elipses {
+    from, to { color: transparent }
+    50% { color: white; }
 }
 
 .wbHeader {
@@ -232,11 +352,12 @@ li {
 }
 
 .BodySample {
-    padding: 30px 22%;
-    padding-top: 60px;
+    padding: 30px 32%;
+    padding-top: 100px;
     padding-bottom: 80px;
     color: white;
     text-align: justify;
+    background-color: var(--myDarkGray);
 }
 
 .bsHeader {
@@ -257,16 +378,16 @@ li {
 .splitBodies {
     display: grid;
     grid-gap: 50px;
-    grid-template-areas: "a b c";
+    grid-template-areas: "a b";
     margin-bottom: 70px;
 }
 
 .secondBody {
     line-height: 155%;
     font-size: large;
-    grid-area: "c";
+    grid-area: "a";
     letter-spacing: -1px;
-    word-spacing: -5px;
+    word-spacing: -6px;
     font-weight: 500;
 }
 
@@ -274,6 +395,7 @@ li {
     font-size: 14pt;
     word-spacing: -5px;
     line-height: 125%;
+    grid-area: "b";
 }
 
 .fourthBody {
@@ -283,3 +405,130 @@ li {
     line-height: 125%;
     text-align: left;
 }
+
+.WordBank {
+    padding: 30px 10%;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.wb1 {
+    font-size: 100pt;
+    color: white;
+}
+
+.wb2 {
+    font-size: 100pt;
+    color: white;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+.wb2metal {
+    color: silver;
+}
+
+.wb2work {
+    color: rgb(94, 94, 94);
+}
+
+.wb2work p:hover {
+    animation:  shake 0.8s infinite ;
+
+}
+
+@keyframes shake{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(25px);
+    letter-spacing: -19px;
+  }
+    
+  50%{
+    transform: translateX(-25px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+  
+}
+
+.wb3 {
+    font-size: 100pt;
+    color: white;
+}
+
+.wb4 {
+    font-size: 100pt;
+    color: white;
+}
+
+.subnormality {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.subnormality span {
+    position: relative;
+    display: inline-block;
+    color: var(--myBlue);
+    font-size: 100pt;
+    animation: subjump 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes subjump {
+    0% {
+        transform: translateY(0px);
+        transform: scale(-1, 1);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.wb5 {
+    font-size: 100pt;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+}
+
+.wb5clap {
+    color: blue;
+}
+
+.wb5thund p:hover {
+    animation:  shake 0.8s infinite ;
+
+}
+
+@keyframes thunderShake{
+    0%{
+      transform: translateX(0);
+      letter-spacing: -19px;
+    }
+    25%{
+      transform: translateX(25px);
+    }
+      
+    50%{
+      transform: translateX(-25px);
+    }
+    100%{
+      transform: translateX(0px);
+      
+    }
+    
+  }
